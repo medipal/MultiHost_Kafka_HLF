@@ -18,7 +18,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.hostname == ${ORG1_HOSTNAME}
+          - node.hostname == yogesh-VM
     # Give network alias
     networks:
       - skcript
@@ -41,7 +41,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.hostname == ${ORG2_HOSTNAME}
+          - node.hostname == yogesh-VM
     image: hyperledger/fabric-zookeeper
     # Give network alias
     networks:
@@ -56,7 +56,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.hostname == ${ORG3_HOSTNAME}
+          - node.hostname == yogesh-VM
     hostname: zookeeper2.example.com
     image: hyperledger/fabric-zookeeper
     # Give network alias
