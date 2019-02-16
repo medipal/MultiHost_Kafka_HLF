@@ -17,7 +17,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.hostname == yogesh-VM
+          - node.hostname == ip-172-31-2-93
     image: hyperledger/fabric-peer:x86_64-1.1.0
     hostname: peer0.org2.example.com
     environment:
@@ -76,7 +76,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.hostname == yogesh-VM
+          - node.hostname == ip-172-31-2-93
     image: hyperledger/fabric-peer:x86_64-1.1.0
     hostname: peer1.org2.example.com
     environment:

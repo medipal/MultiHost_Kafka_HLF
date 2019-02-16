@@ -17,7 +17,7 @@ services:
         max_attempts: 3
       placement:
         constraints:
-          - node.hostname == yogesh-VM
+          - node.hostname == ip-172-31-2-93
     image: hyperledger/fabric-orderer:x86_64-1.1.0
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric/orderer
     command: orderer
